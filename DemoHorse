@@ -1,0 +1,65 @@
+import java.util.*;
+
+public class DemoHorse{
+     public static void main(String [] args){
+       Scanner in = new Scanner(System.in);
+       
+       
+       Horses horse1 = new Horses();
+       Horses horse2 = new Horses();
+  
+       RaceHorse RaceHorse1 = new RaceHorse();
+       RaceHorse RaceHorse2 = new RaceHorse();
+      
+       
+        System.out.print("Enter name for horse1: ");
+        String name1 = in.nextLine();
+        horse1.setName(name1);
+        
+        System.out.print("Enter color for horse1: ");
+        String color1 = in.nextLine();
+        horse1.setColor(color1);
+        
+        System.out.print("Enter birthYear for horse1: ");
+        int birthYear1 = in.nextInt();
+        horse1.setBirthYear(birthYear1);
+        
+        System.out.print("Enter races for horse1: ");
+        int race1 = in.nextInt();
+        RaceHorse1.setRace(race1);
+        
+       
+          System.out.println("\nHorse1 name: " 
+                             + horse1.getName() + " || Horse1 color: "
+                             + horse1.getColor() + " || Horse1 birthyear: "  
+                             + horse1.getBirthYear() + " || Horse1 number of races competed: " + RaceHorse1.getRace());
+                             
+                             
+         System.out.print("\n");
+
+       
+        System.out.print("Enter name for horse2: ");
+        String name2 = in.next();
+        horse2.setName(name2);
+        
+        System.out.print("Enter color for horse2: ");
+        String color2 = in.next();
+        horse2.setColor(color2);
+        
+        System.out.print("Enter birthYear for horse2: ");
+        int birthYear2 = in.nextInt();
+        horse2.setBirthYear(birthYear2);
+        
+        System.out.print("Enter races for horse2: ");
+        int race2 = in.nextInt();
+        RaceHorse2.setRace(race2);
+
+        
+           System.out.println("\nHorse2 name: " 
+                                + horse2.getName() + " || Horse2 color: "
+                                + horse2.getColor() + " || Horse2 birthyear: "  
+                                + horse2.getBirthYear()+ " || Horse2 number of races competed: " + RaceHorse2.getRace());
+                      
+     }
+
+}
