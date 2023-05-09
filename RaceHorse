@@ -1,0 +1,12 @@
+public class RaceHorse{
+
+      private int race;
+      
+      public void setRace(int race){
+        this.race = race;
+         
+      }
+      public int getRace(){
+         return race;
+      }
+}
